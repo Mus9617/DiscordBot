@@ -2,14 +2,11 @@
 
 This is a Discord bot project that aims to [to use simple commands with the bot].
 
-<<<<<<< HEAD
-![Image Example](ignore/tomaslechat.PNG)
-=======
 
-
-![Alt Text](.ignore/tomaslechat.PNG)
-
->>>>>>> 668af7d7d193956b778417e572d83951c262800e
+<p align="center">
+  <img src="your_relative_path_here" width="350" title="hover text">
+  <img src="ignore/tomaslechat.PNG" width="350" alt="accessibility text">
+</p>
 
 
 
