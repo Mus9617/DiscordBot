@@ -9,6 +9,10 @@ const {
   Permissions,
 } = require("discord.js");
 
+/**
+ * Represents the client for interacting with the Discord API.
+ * @type {Client}
+ */
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
