@@ -1,0 +1,37 @@
+# Discord Bot Project
+
+This is a Discord bot project that aims to [to use simple commands with the bot].
+
+![Image Example](.ignore/tomaslechat.PNG)
+
+
+
+## Installation
+
+1. Clone this repository.
+2. Install the required dependencies by running `npm install`.
+3. Configure the bot by creating a `.env` file and adding your Discord bot token.
+4. Start the bot by running `npm .`.
+
+## Usage
+
+[The Bot Is Using Just 3 simple commands:
+   
+        (In Spanish )
+
+    1: /Buenas = Buenas Como Estas?
+    2: /Creador = Mi Desarrollador Es zowix_96
+    3: /ping = Pong
+
+]
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please [follow these guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+If you have any questions or suggestions, feel free to reach out to me at my profile  [GitHub profile](https://github.com/Mus9617).
