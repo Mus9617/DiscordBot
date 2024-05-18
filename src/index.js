@@ -36,11 +36,17 @@ client.on("ready", (x) => {
     .setName("creador")
     .setDescription("Pregunta Quien La Desarollo?");
 
+    const discord = new SlashCommandBuilder()
+    .setName("discord")
+    .setDescription("Discord invite link");
+
+
 
   
   client.application.commands.create(ping);
   client.application.commands.create(buenas);
   client.application.commands.create(creador);
+  client.application.commands.create(discord);
 });
 
 client.on("interactionCreate", async (interaction) => {
@@ -54,6 +60,14 @@ client.on("interactionCreate", async (interaction) => {
   if (interaction.commandName === "creador") {
     interaction.reply("Mi Desarrollador Es zowix_96 ");
   }
+  if (interaction.commandName === "discord") {
+    interaction.reply("https://discord.gg/k2a7JRU32B");
+  }
+
+  
+
+
+
 });
 
 client.login( process.env.TOKEN
