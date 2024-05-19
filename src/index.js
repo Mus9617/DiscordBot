@@ -40,13 +40,26 @@ client.on("ready", (x) => {
     .setName("discord")
     .setDescription("Discord invite link");
 
+    const async = new SlashCommandBuilder()
+    .setName("async")
+    .setDescription("async Function example in javascript");
 
+    const what = new SlashCommandBuilder()
+    .setName("what")
+    .setDescription("What is your favorite programming language");
 
+    const avnyr = new SlashCommandBuilder()
+    .setName("avnyr")
+    .setDescription("Who is Avnyr?");
+  
   
   client.application.commands.create(ping);
   client.application.commands.create(buenas);
   client.application.commands.create(creador);
   client.application.commands.create(discord);
+  client.application.commands.create(async);
+  client.application.commands.create(what);
+  client.application.commands.create(avnyr);
 });
 
 client.on("interactionCreate", async (interaction) => {
@@ -58,17 +71,28 @@ client.on("interactionCreate", async (interaction) => {
     interaction.reply("Buenas! Como estas?");
   }
   if (interaction.commandName === "creador") {
-    interaction.reply("Mi Desarrollador Es zowix_96 ");
+    interaction.reply("Mi Desarrollador Es zowix_96 Puedes Encontrarlo En GitHub: https://github.com/Mus9617");
+
   }
   if (interaction.commandName === "discord") {
     interaction.reply("https://discord.gg/k2a7JRU32B");
   }
 
-  
+  // ---Meme For avnyr---
 
+  if (interaction.commandName === "async") {
+    interaction.reply("An async function declaration creates an AsyncFunction object. Each time when an async function is called, it returns a new Promise which will be resolved with the value returned by the async function, or rejected with an exception uncaught within the async function.");
+  }
 
+  if (interaction.commandName === "what") {
+    interaction.reply("My favorite programming language is JavaScript");
+  }
 
-});
+  if (interaction.commandName === "avnyr") {
+    interaction.reply("Avnyr is the lord of the code, the master of the code, the creator of the code, the one who created you, the one who created everything, the one who created the universe, the one who created the multiverse, the one who created the omniverse. You can find his GitHub profile at https://github.com/matherriot");
+  }
+
+ });
 
 client.login( process.env.TOKEN
 );
